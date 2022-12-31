@@ -15,6 +15,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+
+
+
 header{
     background-image:linear-gradient(to top,var(--escuro),var(--claro));
     width: 100%;
@@ -34,10 +37,15 @@ header h1{
     padding-bottom: 15px;
     max-width: 450px;
     margin: auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.638);
 }
 header p{
     font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.638);
 }
+
+
+
 nav{
     background-color: var(--escuro);
     padding-bottom:15px;
@@ -53,6 +61,9 @@ nav a:hover{
     color: var(--escuro);
    border-radius: 8px;
 }
+
+
+
 article{
     max-width: 800px;
     margin: auto;
@@ -70,29 +81,128 @@ article p{
     text-align: justify;
     text-indent: 20px;
 }
+
+
+
+#curiosidade{
+    background-color: rgb(209, 209, 243);
+    padding: 10px;
+    max-width: 800px;
+    height: 300px;
+    position: relative;
+}
+#direita{
+    width: 450px;
+    display: inline-block;
+}
+#esquerda{
+    display: inline;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+    left: 430px;
+    right: 20px;
+}
+#esquerda img{
+   width: 100%;
+}
+
+
+
 /*timeline*/
 #timeline{
     max-width: 800px;
     background-color: rgb(128, 128, 128);
     padding: 50px 15px;
 }
+#timeline h2{
+    margin: auto;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.475);
+}
 .itens{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+}
+.itens::before{
+    content: '';
+    position: absolute;
+    width:2px;
+    height: 99%;
+    background-color: rgb(175, 175, 175);
+    left: calc(50% - 1px);
+    top: 70px;
 }
 .item{
     margin-bottom: 40px;
-    width: 100%
+    width: 100%;
+    position: relative;
+}
+.item:last-child{
+    margin-bottom: 0;
 }
 .item:nth-child(odd){
     padding-right: calc(50% + 30px);
+    text-align: right;
 }
 .item:nth-child(even){
     padding-left: calc(50% + 30px);
 }
+.bolinha{
+    height: 16px;
+    width: 16px;
+    background-color: rgb(241, 191, 191);
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 8px);
+    top: 70px;
+}
+.data{
+    font-size: 1.1em;
+    margin: 6px 0px 15px;
+    color: rgb(241, 191, 191);
+}
 .content{
     background-color: rgb(175, 175, 175);
+    padding:20px;
+    border-radius: 20px;
+}
+#timeline ul{
+    list-style-type: square;
 }
 ul,ol{
     list-style-position: inside;
+}
+/*Responsividade*/
+@media(max-width: 420px){
+    nav{
+        margin: auto;
+    }
+    nav a{
+        font-size: 0.7em;
+        padding: 5px;
+    }
+    header h1{
+        font-size: 1.7em;
+    }
+
+    .itens::before{
+        left: 7px;
+        top:100px;
+    }
+    .item:nth-child(odd){
+        padding-right: 0px;
+        text-align: left;
+    }
+    .item:nth-child(odd),.item:nth-child(even){
+        padding-left: 37px;
+    }
+    .bolinha{
+        left: 0px;
+    }
+    .item li{
+        font-size: 0.9em;
+    }
 }
