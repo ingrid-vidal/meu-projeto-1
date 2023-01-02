@@ -180,6 +180,30 @@ img{
 ul,ol{
     list-style-position: inside;
 }
+
+
+#positions{
+    margin-top: 30px;
+}
+#positions ol{
+    columns: 2;
+    line-height: 2em;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+@media(max-width: 290px){
+    #positions ol{
+        columns: 1;
+        margin-left: 35%;
+    }
+}
+
+footer{
+    
+}
+
+
+
 /*Responsividade*/
 @media(max-width: 420px){
     nav{
