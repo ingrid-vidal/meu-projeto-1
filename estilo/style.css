@@ -184,6 +184,10 @@ ul,ol{
 
 #positions{
     margin-top: 30px;
+    margin-bottom: 30px;
+}
+#positions h2{
+    text-align: center;
 }
 #positions ol{
     columns: 2;
