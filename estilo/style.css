@@ -4,6 +4,7 @@
 :root{
     --claro:rgb(153, 153, 250);
     --escuro:rgb(13, 13, 105);
+    --fundo:rgba(233, 233, 251, 0.348);
 }
 
 *{
@@ -42,6 +43,8 @@ header h1{
 header p{
     font-size: 1.2em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.638);
+    max-width: 500px;
+    margin: auto;
 }
 
 
@@ -55,6 +58,7 @@ nav a{
     color: white;
     padding: 6px 12px;
     margin-left: 5px;
+    transition: all .7s;
 }
 nav a:hover{
     background-color: rgba(163, 163, 243, 0.642);
@@ -68,13 +72,17 @@ article{
     max-width: 800px;
     margin: auto;
 
-    background-color: rgba(245, 245, 220, 0.693);
+    background-color: var(--fundo);
     padding: 10px;
 }
 article h1{
     font-size: 2em;
     line-height: 1.5em;
     text-align: center;
+}
+article h2{
+    margin: 20px 0;
+    text-indent: 1em;
 }
 article p{
     line-height: 2em;
@@ -83,12 +91,14 @@ article p{
 }
 
 
+
 img{
     display: block;
     margin: auto;
     max-width: 100%;
     border-radius: 7px;
 }
+
 
 
 #curiosidade{
@@ -117,14 +127,14 @@ img{
 /*timeline*/
 #timeline{
     max-width: 800px;
-    background-color: rgb(128, 128, 128);
+    background-color: var(--fundo);
     padding: 50px 15px;
 }
 #timeline h2{
     margin: auto;
     font-weight: bold;
     margin-bottom: 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.475);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 .itens{
     display: flex;
@@ -158,7 +168,7 @@ img{
 .bolinha{
     height: 16px;
     width: 16px;
-    background-color: rgb(241, 191, 191);
+    background-image:radial-gradient(rgb(123, 123, 253),rgb(51, 6, 253));
     border-radius: 50%;
     position: absolute;
     left: calc(50% - 8px);
@@ -167,10 +177,10 @@ img{
 .data{
     font-size: 1.1em;
     margin: 6px 0px 15px;
-    color: rgb(241, 191, 191);
+    color: rgb(8, 8, 253);
 }
 .content{
-    background-color: rgb(175, 175, 175);
+    background-color: var(--fundo);
     padding:20px;
     border-radius: 20px;
 }
