@@ -17,41 +17,45 @@ body{
     font-size: 16px;
 }
 
-
+main{
+    position: relative;
+}
 
 header{
     background-image:linear-gradient(to top,var(--escuro),var(--claro));
     width: 100%;
     min-height:200px ;
     padding: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
 
     text-align: center;
     color: white;
-
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.684);
 }
 header h1{
     font-size: 2.1em;
     /*font-family: ;*/
     font-variant: small-caps;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     max-width: 450px;
     margin: auto;
+    padding-top:0px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.638);
 }
 header p{
     font-size: 1.2em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.638);
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
 }
 
 
 
 nav{
-    background-color: var(--escuro);
-    padding-bottom:15px;
+    background-color: var(--claro);
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+    column-gap: 20px;
 }
 nav a{
     text-decoration: none;
@@ -59,11 +63,15 @@ nav a{
     padding: 6px 12px;
     margin-left: 5px;
     transition: all .7s;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 nav a:hover{
-    background-color: rgba(163, 163, 243, 0.642);
-    color: var(--escuro);
-   border-radius: 8px;
+    background-color: rgba(13, 13, 105, 0.632);
+
+    color: var(--claro);
+    border-radius: 8px;
 }
 
 
