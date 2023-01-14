@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="estilo/style.css">
     <style>
         div{
-            margin: 0px -20px 30px -20px;
+            max-width: 760px;
+            margin: auto;
             padding: 20px;
             padding-bottom: 56.8%;
-
             position: relative;
+            background-color:rgba(171, 171, 225, 0.677);
+            border-radius: 10px;
     }
         div > iframe{
             position: absolute;
@@ -22,6 +24,9 @@
             width: 90%;
             height: 90%;
             border-radius: 20px;
+    }
+    section{
+        background-color: background-color: rgba(171, 171, 225, 0.677);
     }
     </style>
 </head>
@@ -38,14 +43,19 @@
         </nav>
         <article>
             <h2>O que é a programação</h2>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XASY30EfGAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+            <section>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XASY30EfGAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
             <h2>Ada Lovelace</h2>
             <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/kveunrBU5UM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </article>
     </main>
+    <footer>
+        <p>Site criado por <a href="https://github.com/ingrid-vidal" target="_blank">Ingrid Vidal</a></p>
+    </footer>
 </body>
 </html>
